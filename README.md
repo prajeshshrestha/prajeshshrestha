@@ -8,7 +8,7 @@
 
 - 🌱 I’m currently learning **Natural Language Processing**
 
-- 👨‍💻 All of my (public) projects are available at [https://github.com/kaledai069](https://github.com/kaledai069)
+- 👨‍💻 All of my (public) projects are available at ['eta'](https://github.com/kaledai069?tab=repositories)
 
 - 💬 Don't ask me about **React, React Native, Next.js**
 
