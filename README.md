@@ -4,9 +4,9 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kaledai069&label=Profile%20views&color=0e75b6&style=flat" alt="kaledai069" /> </p>
 
-- 🔭 I’m currently working on [Crossword Solver](https://github.com/kaledai069/Crossword-Solver-A-Neural-Transformer-based-Approach)
+- 🔭 I’m currently working on Implementing RAG Pipeline.
 
-- 🌱 I’m currently learning **Natural Language Processing**
+- 🌱 I’m currently learning **RAG Models**
 
 - 👨‍💻 All of my (public) projects are available at ['eta'](https://github.com/kaledai069?tab=repositories)
 
