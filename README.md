@@ -51,8 +51,8 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/momentum.dark.svg" />
-  <img src="./assets/stats/momentum.light.svg" alt="Contribution trend over time" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/rhythm.dark.svg" />
+  <img src="./assets/stats/rhythm.light.svg" alt="Contribution patterns by weekday and month" width="100%" />
 </picture>
 
 <picture>
