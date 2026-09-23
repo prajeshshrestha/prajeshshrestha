@@ -1,0 +1,27 @@
+name: Profile cards
+
+"on":
+  push:
+    paths:
+      - README.md
+      - .github/workflows/profile-cards.yml
+  schedule:
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: seijikohara/profile-cards-action@19ff3829169ccebf0a7f25dfd34c9e780aee1c23 # v1.0.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: prajeshshrestha
+          cards: overview,momentum,contributions,composition,languages
+          output-dir: assets/stats
+          themes: light,dark
+          commit: true

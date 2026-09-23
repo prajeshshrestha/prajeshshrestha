@@ -4,7 +4,7 @@
   </a>
   
   <h1>
-    Hi there, I'm Prajesh Shrestha! 👋
+    Hi there, I'm Prajesh Shrestha!
   </h1>
   
   <h3>AI Engineer | NLP & Deep Learning Specialist</h3>
@@ -22,16 +22,16 @@
 
 ---
 
-### 🚀 What I'm Up To
+### What I'm Up To
 
-- 🔭 **I’m currently building:** An Agentic AI framework
-- 🌱 **I’m currently learning:** Advanced techniques in **LLM fine-tuning and alignment**.
-- 👨‍💻 All of my public projects are available on my **[GitHub Repositories](https://github.com/prajeshshrestha?tab=repositories)**.
-- ⚡ **Fun fact:** The concept of a "neuron" in a neural network is inspired by biological neurons, but it's a vast simplification. A single biological neuron is as complex as an entire small neural network!
+- **I’m currently building:** An Agentic AI framework
+- **I’m currently learning:** Advanced techniques in **LLM fine-tuning and alignment**.
+- All of my public projects are available on my **[GitHub Repositories](https://github.com/prajeshshrestha?tab=repositories)**.
+- **Fun fact:** The concept of a "neuron" in a neural network is inspired by biological neurons, but it's a vast simplification. A single biological neuron is as complex as an entire small neural network!
 
 ---
 
-### 🛠️ My Tech Stack
+### My Tech Stack
 
 <div align="center">
   
@@ -43,55 +43,49 @@
 
 ---
 
-### 🔥 My GitHub Stats & Activity
+### GitHub Stats & Activity
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=prajeshshrestha&theme=dracula&column=7&margin-w=15&margin-h=15" alt="prajeshshrestha's GitHub Trophies" />
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/overview.dark.svg" />
+  <img src="./assets/stats/overview.light.svg" alt="GitHub overview: contributions, stars, pull requests, issues, repositories, and followers" width="100%" />
+</picture>
 
-<div align="center">
-  <p>
-    <img 
-      src="https://github-readme-stats.vercel.app/api?username=prajeshshrestha&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" 
-      alt="prajeshshrestha's GitHub stats" 
-      height="192px"
-    />
-    <img 
-      src="https://github-readme-stats.vercel.app/api/top-langs/?username=prajeshshrestha&layout=compact&theme=tokyonight&langs_count=8&hide=html,css" 
-      alt="prajeshshrestha's top languages"
-      height="192px"
-    />
-  </p>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/momentum.dark.svg" />
+  <img src="./assets/stats/momentum.light.svg" alt="Contribution trend over time" width="100%" />
+</picture>
 
-<div align="center">
-  <p>
-    <img 
-      src="https://github-readme-streak-stats.herokuapp.com/?user=prajeshshrestha&theme=tokyonight" 
-      alt="prajeshshrestha's GitHub streak" 
-    />
-  </p>
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/contributions.dark.svg" />
+  <img src="./assets/stats/contributions.light.svg" alt="Contribution calendar and current and longest streaks" width="100%" />
+</picture>
 
-<div align="center">
-  <img 
-    src="https://github-readme-activity-graph.vercel.app/graph?username=prajeshshrestha&theme=tokyonight&hide_border=true&area=true&bg_color=1a1b27&color=70a5fd&line=70a5fd&point=ffffff" 
-    alt="prajeshshrestha's contribution graph" 
-  />
-</div>
+<details>
+<summary>More activity: contribution types and languages</summary>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/composition.dark.svg" />
+  <img src="./assets/stats/composition.light.svg" alt="Contributions by year, split into commits, pull requests, issues, and reviews" width="100%" />
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/languages.dark.svg" />
+  <img src="./assets/stats/languages.light.svg" alt="Languages used across public repositories" width="100%" />
+</picture>
+
+</details>
 
 ---
 
-### 📌 Pinned Projects
+### Pinned Projects
 
 <div align="center">
   <p>
     <a href="https://github.com/prajeshshrestha/Modeling-Data-with-Data-Mining-Algorithms">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=prajeshshrestha&repo=Modeling-Data-with-Data-Mining-Algorithms&theme=dracula&show_owner=true" />
+      <img src="./assets/projects/data-mining.svg" alt="Data mining projects using PCA, KNN, decision trees, Naive Bayes, and neural networks" width="400" />
     </a>
     <a href="https://github.com/prajeshshrestha/A_Star-Path-Finding-Algorithm">
-      <img src="https://github-readme-stats.vercel.app/api/pin/?username=prajeshshrestha&repo=A_Star-Path-Finding-Algorithm&theme=dracula&show_owner=true" />
+      <img src="./assets/projects/a-star.svg" alt="A-star pathfinding algorithm and visualizer" width="400" />
     </a>
   </p>
 </div>

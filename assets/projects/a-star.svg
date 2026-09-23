@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="170" viewBox="0 0 400 170" role="img" aria-labelledby="title description">
+  <title id="title">A Star Pathfinding Algorithm</title>
+  <desc id="description">A Python pathfinding algorithm and visualizer.</desc>
+  <rect x="1" y="1" width="398" height="168" rx="10" fill="#282a36" stroke="#6272a4" stroke-width="2"/>
+  <path d="M20 1h360" stroke="#8be9fd" stroke-width="2"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="20" y="30" fill="#bd93f9" font-size="12">prajeshshrestha / project</text>
+    <text x="20" y="71" fill="#f8f8f2" font-size="20" font-weight="bold">A* Pathfinding Algorithm</text>
+    <text x="20" y="111" fill="#c7c9d1" font-size="12">Python search algorithm and visualizer</text>
+  </g>
+  <path d="M315 135h24v-23h23V88h23" fill="none" stroke="#8be9fd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="315" cy="135" r="4" fill="#bd93f9"/>
+  <circle cx="385" cy="88" r="5" fill="#50fa7b"/>
+</svg>
