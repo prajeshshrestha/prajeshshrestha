@@ -51,8 +51,8 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/rhythm.dark.svg" />
-  <img src="./assets/stats/rhythm.light.svg" alt="Contribution patterns by weekday and month" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/lifetime.dark.svg" />
+  <img src="./assets/stats/lifetime.light.svg" alt="Contribution history by year, shown as a two-dimensional weekly heatmap" width="100%" />
 </picture>
 
 <picture>
@@ -60,13 +60,18 @@
   <img src="./assets/stats/contributions.light.svg" alt="Contribution calendar and current and longest streaks" width="100%" />
 </picture>
 
-<details>
-<summary>More activity: contribution types and languages</summary>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/rhythm.dark.svg" />
+  <img src="./assets/stats/rhythm.light.svg" alt="Contribution patterns by weekday and month" width="100%" />
+</picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/composition.dark.svg" />
   <img src="./assets/stats/composition.light.svg" alt="Contributions by year, split into commits, pull requests, issues, and reviews" width="100%" />
 </picture>
+
+<details>
+<summary>Languages by public repository file size</summary>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/languages.dark.svg" />

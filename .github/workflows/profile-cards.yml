@@ -21,7 +21,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           username: prajeshshrestha
-          cards: overview,rhythm,contributions,composition,languages
+          cards: overview,lifetime,contributions,rhythm,composition,languages
           output-dir: assets/stats
           themes: light,dark
           commit: true
