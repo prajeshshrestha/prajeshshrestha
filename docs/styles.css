@@ -1,0 +1,87 @@
+:root { color-scheme: dark; --bg: #0c1015; --panel: #111820; --line: #25303b; --muted: #8f9eac; --text: #e8eff6; --accent: #65e8a4; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+main { max-width: 1240px; margin: auto; padding: 0 36px 28px; }
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+header { display: flex; justify-content: space-between; align-items: center; min-height: 84px; border-bottom: 1px solid var(--line); font-size: 14px; }
+.identity { font-weight: 600; }
+.identity span { font-weight: 400; color: var(--muted); margin-left: 6px; }
+.profile-link { color: var(--muted); }
+.profile-link span { margin-left: 8px; }
+.intro { padding: 44px 0 30px; }
+.eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 11px; font-family: ui-monospace, monospace; letter-spacing: 2px; }
+h1 { margin: 0 0 12px; font-size: clamp(30px, 5vw, 49px); letter-spacing: -1.8px; font-weight: 650; }
+h1 span { color: var(--accent); }
+.subtitle { color: var(--muted); margin: 0; font-size: 16px; }
+.metrics { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 24px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.metrics > div { padding: 22px 26px; }
+.metrics > div + div { border-left: 1px solid var(--line); }
+.metrics span, .metrics small { display: block; color: var(--muted); font-size: 12px; }
+.metrics strong { display: block; font-size: 33px; font-weight: 600; letter-spacing: -1px; margin: 8px 0; font-variant-numeric: tabular-nums; }
+.metrics small { font-size: 11px; }
+.landscape { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: radial-gradient(ellipse at 52% 64%, #12282066 0, transparent 60%), #0e141b; }
+.toolbar { padding: 16px 20px; display: flex; justify-content: space-between; gap: 14px; align-items: center; border-bottom: 1px solid var(--line); }
+.period { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 12px; }
+select, button, input { font: inherit; font-size: 12px; color: var(--text); border: 1px solid #33414e; border-radius: 6px; background: #171f28; }
+select, button { padding: 8px 12px; min-height: 36px; }
+button { cursor: pointer; white-space: nowrap; }
+button:hover:not(:disabled), select:hover:not(:disabled) { background: #25332f; border-color: #527463; }
+button[aria-pressed="true"] { color: var(--accent); border-color: #4c8866; background: #1c3329; }
+button:disabled, select:disabled, input:disabled { opacity: .45; cursor: default; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.view-controls { display: flex; gap: 8px; }
+#viewport { position: relative; height: 450px; }
+#viewport canvas { display: block; width: 100%; height: 100%; cursor: grab; touch-action: none; }
+#viewport canvas:active { cursor: grabbing; }
+#loading { position: absolute; top: 45%; width: 100%; text-align: center; padding: 0 24px; color: var(--muted); font-size: 14px; }
+#loading.error { z-index: 2; }
+#labels { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.month-label { position: absolute; transform: translate(-50%, -50%); font-family: ui-monospace, monospace; font-size: 11px; color: #9fadb8; text-shadow: 0 1px 4px #0c1015; white-space: nowrap; }
+#tooltip { position: absolute; z-index: 3; pointer-events: none; background: #1d2933ee; border: 1px solid #446150; border-radius: 8px; padding: 10px 13px; font-size: 12px; line-height: 1.7; box-shadow: 0 4px 24px #0006; white-space: pre-line; }
+.zoom-controls { position: absolute; right: 18px; bottom: 18px; display: flex; gap: 6px; }
+.zoom-controls button { width: 36px; font-size: 19px; padding: 4px; }
+.chart-footer { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 20px; border-top: 1px solid var(--line); font-size: 11px; color: var(--muted); }
+.separator { margin: 0 6px; color: #596774; }
+.legend { display: flex; gap: 5px; align-items: center; white-space: nowrap; }
+.legend i { height: 9px; width: 9px; border-radius: 2px; background: #1c2934; }
+.legend i:nth-of-type(2) { background: #0e4429; }
+.legend i:nth-of-type(3) { background: #006d32; }
+.legend i:nth-of-type(4) { background: #26a641; }
+.legend i:nth-of-type(5) { background: #39d353; }
+.inspection { display: grid; grid-template-columns: 1.1fr 1.5fr .7fr .7fr; gap: 24px; padding: 24px 26px; background: var(--panel); border: 1px solid var(--line); border-radius: 12px; margin-top: 20px; align-items: center; }
+.day-navigation label, .day-detail > span, .period-detail span { font-size: 11px; color: var(--muted); display: block; margin-bottom: 10px; }
+.day-picker { display: flex; gap: 5px; }
+.day-picker button { padding: 6px 9px; }
+.day-picker input { padding: 7px; width: 140px; min-width: 0; }
+.day-detail strong { font-size: 20px; font-weight: 550; }
+.period-detail strong { font-size: 22px; font-weight: 550; font-variant-numeric: tabular-nums; }
+.daily-data { margin-top: 20px; border: 1px solid var(--line); border-radius: 10px; font-size: 13px; }
+summary { cursor: pointer; padding: 16px 20px; color: var(--muted); }
+summary:hover { color: var(--text); }
+.table-scroll { max-height: 300px; overflow: auto; padding: 0 20px 20px; }
+table { border-collapse: collapse; width: 100%; }
+caption { text-align: left; color: var(--muted); padding: 6px 0 16px; font-size: 11px; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 400; }
+th:last-child, td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+footer { display: flex; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 10px; padding: 22px 0 0; }
+@media (max-width: 700px) {
+  main { padding: 0 16px 24px; }
+  header { min-height: 68px; font-size: 12px; }
+  .identity span { display: none; }
+  .intro { padding: 32px 0 24px; }
+  .metrics > div { padding: 16px 12px; }
+  .metrics strong { font-size: 27px; }
+  .metrics small { line-height: 1.6; }
+  .toolbar { flex-wrap: wrap; padding: 14px; }
+  .view-controls { width: 100%; }
+  .view-controls button { flex: 1; padding: 8px; }
+  #viewport { height: 370px; }
+  .chart-footer { flex-wrap: wrap; padding: 12px 14px; }
+  .inspection { grid-template-columns: 1fr 1fr; padding: 20px 16px; gap: 22px 12px; }
+  .day-navigation { grid-column: 1 / -1; }
+  .day-picker input { width: 160px; }
+  .day-detail { grid-column: 1 / -1; }
+  footer { flex-direction: column; gap: 8px; line-height: 1.6; }
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Explore Prajesh Shrestha's GitHub contributions in 3D. Rotate, zoom, and inspect every day.">
+  <title>Contribution landscape · Prajesh Shrestha</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"}}
+  </script>
+</head>
+<body>
+<main>
+  <header>
+    <a class="identity" href="https://github.com/prajeshshrestha">Prajesh Shrestha <span>/ GitHub activity</span></a>
+    <a class="profile-link" href="https://github.com/prajeshshrestha">Back to profile <span aria-hidden="true">↗</span></a>
+  </header>
+  <section class="intro">
+    <p class="eyebrow">A YEAR IN CONTRIBUTIONS</p>
+    <h1>Contribution landscape<span>.</span></h1>
+    <p class="subtitle">Every block is a day. Explore the work behind the peaks.</p>
+  </section>
+
+  <section class="metrics" aria-label="Activity summary">
+    <div><span>Contributions</span><strong id="total">—</strong><small id="range">Loading your calendar</small></div>
+    <div><span>Active days</span><strong id="active">—</strong><small id="consistency">Days with contributions</small></div>
+    <div><span>Busiest day</span><strong id="peak">—</strong><small id="peak-date">In this time range</small></div>
+  </section>
+
+  <section class="landscape" aria-label="Interactive contribution chart">
+    <div class="toolbar">
+      <label class="period">Time range
+        <select id="period" disabled>
+          <option value="0">Past year</option>
+          <option value="90">Last 90 days</option>
+          <option value="30">Last 30 days</option>
+        </select>
+      </label>
+      <div class="view-controls" role="group" aria-label="Chart controls">
+        <button id="top" type="button" aria-pressed="false" disabled>Top view</button>
+        <button id="rotate" type="button" aria-pressed="false" disabled>Auto rotate</button>
+        <button id="reset" type="button" disabled>Reset view</button>
+      </div>
+    </div>
+    <div id="viewport" aria-label="3D chart. Drag to rotate; scroll or pinch to zoom.">
+      <p id="loading" role="status">Loading the landscape…</p>
+      <div id="labels" aria-hidden="true"></div>
+      <div id="tooltip" role="tooltip" hidden></div>
+      <div class="zoom-controls" role="group" aria-label="Zoom controls">
+        <button id="zoom-in" type="button" aria-label="Zoom in" disabled>+</button>
+        <button id="zoom-out" type="button" aria-label="Zoom out" disabled>−</button>
+      </div>
+    </div>
+    <div class="chart-footer">
+      <span>Drag to rotate <span class="separator">·</span> Scroll or pinch to zoom</span>
+      <span class="legend">Less <i></i><i></i><i></i><i></i><i></i> More</span>
+    </div>
+  </section>
+
+  <section class="inspection" aria-label="Selected day">
+    <div class="day-navigation">
+      <label for="day">Inspect a day</label>
+      <div class="day-picker">
+        <button id="previous" type="button" aria-label="Previous day" disabled>←</button>
+        <input id="day" type="date" disabled>
+        <button id="next" type="button" aria-label="Next day" disabled>→</button>
+      </div>
+    </div>
+    <div class="day-detail" aria-live="polite" aria-atomic="true">
+      <span id="selected-date">Select a block or choose a date</span>
+      <strong id="selected-count">—</strong>
+    </div>
+    <div class="period-detail"><span>That week</span><strong id="week-count">—</strong></div>
+    <div class="period-detail"><span>That month</span><strong id="month-count">—</strong></div>
+  </section>
+
+  <details class="daily-data">
+    <summary>View daily contribution counts</summary>
+    <div class="table-scroll"><table>
+      <caption>Exact counts for the selected time range</caption>
+      <thead><tr><th scope="col">Date</th><th scope="col">Contributions</th></tr></thead>
+      <tbody id="daily-counts"></tbody>
+    </table></div>
+  </details>
+
+  <footer>
+    <span id="updated">Loading contribution data…</span>
+    <span>GitHub contributions <span class="separator">·</span> Checked every 10 minutes</span>
+  </footer>
+  <noscript><p>This interactive view needs JavaScript. <a href="https://github.com/prajeshshrestha">View the contribution cards on GitHub.</a></p></noscript>
+</main>
+<script type="module" src="viewer.js"></script>
+</body>
+</html>

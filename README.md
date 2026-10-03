@@ -55,10 +55,14 @@
   <img src="./assets/stats/lifetime.light.svg" alt="Contribution history by year, shown as a two-dimensional weekly heatmap" width="100%" />
 </picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/contributions.dark.svg" />
-  <img src="./assets/stats/contributions.light.svg" alt="Contribution calendar and current and longest streaks" width="100%" />
-</picture>
+<a href="https://prajeshshrestha.github.io/prajeshshrestha/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/contributions.dark.svg" />
+    <img src="./assets/stats/contributions.light.svg" alt="Explore the interactive 3D contribution calendar" width="100%" />
+  </picture>
+</a>
+
+[Explore in 3D](https://prajeshshrestha.github.io/prajeshshrestha/) · Rotate, zoom, and inspect daily contribution counts.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/rhythm.dark.svg" />
