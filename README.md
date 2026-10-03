@@ -86,19 +86,6 @@
 
 ---
 
-### Pinned Projects
-
-<div align="center">
-  <p>
-    <a href="https://github.com/prajeshshrestha/Modeling-Data-with-Data-Mining-Algorithms">
-      <img src="./assets/projects/data-mining.svg" alt="Data mining projects using PCA, KNN, decision trees, Naive Bayes, and neural networks" width="400" />
-    </a>
-    <a href="https://github.com/prajeshshrestha/A_Star-Path-Finding-Algorithm">
-      <img src="./assets/projects/a-star.svg" alt="A-star pathfinding algorithm and visualizer" width="400" />
-    </a>
-  </p>
-</div>
-
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=prajeshshrestha&label=Profile%20Views&color=blueviolet&style=flat-square" alt="Profile views" />
 </p>
