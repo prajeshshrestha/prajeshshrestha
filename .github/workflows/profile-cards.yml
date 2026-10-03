@@ -6,17 +6,23 @@ name: Profile cards
       - README.md
       - .github/workflows/profile-cards.yml
   schedule:
-    - cron: '15 3 * * *'
+    - cron: '7-57/10 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: profile-cards-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
       - uses: seijikohara/profile-cards-action@19ff3829169ccebf0a7f25dfd34c9e780aee1c23 # v1.0.0
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -24,4 +30,37 @@ jobs:
           cards: overview,lifetime,contributions,rhythm,composition,languages
           output-dir: assets/stats
           themes: light,dark
-          commit: true
+          commit: false
+      - name: Commit only changed stats
+        env:
+          PROFILE_CARDS_BRANCH: ${{ github.ref_name }}
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import subprocess
+
+          # A new render time alone must not create a commit.
+          refreshed = re.compile(r"REFRESHED \d{4}-\d{2}-\d{2} \d{2}:\d{2} UTC")
+          for path in Path("assets/stats").glob("*.svg"):
+              previous = subprocess.run(
+                  ["git", "show", f"HEAD:{path.as_posix()}"],
+                  capture_output=True, text=True,
+              )
+              if previous.returncode == 0:
+                  old = previous.stdout
+                  new = path.read_text()
+                  if refreshed.sub("REFRESHED", old) == refreshed.sub("REFRESHED", new):
+                      path.write_text(old)
+          PY
+
+          git add assets/stats
+          if git diff --cached --quiet -- assets/stats; then
+            echo "No stat changes; skipping commit and push."
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(profile): refresh generated cards [skip ci]'
+          git pull --rebase origin "$PROFILE_CARDS_BRANCH"
+          git push origin "HEAD:$PROFILE_CARDS_BRANCH"
