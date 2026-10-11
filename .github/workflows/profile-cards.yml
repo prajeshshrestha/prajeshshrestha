@@ -31,11 +31,17 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           username: prajeshshrestha
-          cards: overview,lifetime,contributions,rhythm,composition,languages
+          # rhythm, composition and languages are disabled: dropped from the README.
+          cards: overview,lifetime,contributions
           output-dir: assets/stats
           themes: light,dark
           commit: false
+      - name: Trim the contributions card to its streak tiles
+        run: python3 scripts/crop-contributions-card.py
+      # Disabled: the 3D viewer is no longer linked from the README.
+      # Remove `if: false` to bring it back.
       - name: Export contribution data for the 3D viewer
+        if: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/export-contributions.py
@@ -78,7 +84,10 @@ jobs:
 
   publish:
     needs: update
-    if: github.ref == 'refs/heads/main' && (needs.update.outputs.changed == 'true' || github.event_name != 'schedule')
+    # Disabled together with the 3D viewer. Restore by deleting the next line
+    # and un-commenting the original condition below it.
+    if: false
+    # if: github.ref == 'refs/heads/main' && (needs.update.outputs.changed == 'true' || github.event_name != 'schedule')
     runs-on: ubuntu-latest
     permissions:
       contents: read
