@@ -1,24 +1,29 @@
-<div align="center">
-  <a href="https://github.com/prajeshshrestha">
-  <img src="https://images.squarespace-cdn.com/content/v1/592c721986e6c0040d5a263e/1500835784786-FLPND3SN0XG8WFNDKQ86/image-asset.gif?format=2500w" alt="AI and Neural Networks" width="400" />
-  </a>
-  
-  <h1>
-    Hi there, I'm Prajesh Shrestha!
-  </h1>
-  
-  <h3>AI Engineer | NLP & Deep Learning Specialist</h3>
+<table>
+  <tr>
+    <td valign="middle">
+      <h1>
+        Hi there, I'm Prajesh Shrestha!
+      </h1>
 
-  <p>
-    I'm an AI Engineer with a passion for building intelligent systems. My primary focus is on Natural Language Processing (NLP), Large Language Models (LLMs), and exploring the depths of Deep Learning. I'm currently fascinated by the implementation of advanced RAG pipelines.
-  </p>
-  
-  <p>
-    <a href="https://linkedin.com/in/prajesh-shrestha-5836ab228" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-    <a href="https://www.kaggle.com/prajeshrajbhandari" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"/></a>
-    <a href="mailto:parzival.cooler@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
-  </p>
-</div>
+      <h3>AI Engineer | NLP & Deep Learning Specialist</h3>
+
+      <p>
+        I'm an AI Engineer with a passion for building intelligent systems. My primary focus is on Natural Language Processing (NLP), Large Language Models (LLMs), and exploring the depths of Deep Learning. I'm currently fascinated by the implementation of advanced RAG pipelines.
+      </p>
+
+      <p>
+        <a href="https://linkedin.com/in/prajesh-shrestha-5836ab228" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+        <a href="https://www.kaggle.com/prajeshrajbhandari" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"/></a>
+        <a href="mailto:parzival.cooler@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+      </p>
+    </td>
+    <td align="center" valign="middle" width="400">
+      <a href="https://github.com/prajeshshrestha">
+        <img src="https://images.squarespace-cdn.com/content/v1/592c721986e6c0040d5a263e/1500835784786-FLPND3SN0XG8WFNDKQ86/image-asset.gif?format=2500w" alt="AI and Neural Networks" width="400" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
