@@ -4,13 +4,10 @@
       <h1>
         Hi there, I'm Prajesh Shrestha!
       </h1>
-
       <h3>AI Engineer | NLP & Deep Learning Specialist</h3>
-
       <p>
         I'm an AI Engineer with a passion for building intelligent systems. My primary focus is on Natural Language Processing (NLP), Large Language Models (LLMs), and exploring the depths of Deep Learning. I'm currently fascinated by the implementation of advanced RAG pipelines.
       </p>
-
       <p>
         <a href="https://linkedin.com/in/prajesh-shrestha-5836ab228" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
         <a href="https://www.kaggle.com/prajeshrajbhandari" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"/></a>
