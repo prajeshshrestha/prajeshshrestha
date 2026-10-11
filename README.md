@@ -15,6 +15,7 @@
         <a href="https://linkedin.com/in/prajesh-shrestha-5836ab228" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
         <a href="https://www.kaggle.com/prajeshrajbhandari" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"/></a>
         <a href="mailto:parzival.cooler@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
+        <a href="https://github.com/prajeshshrestha"><img src="https://komarev.com/ghpvc/?username=prajeshshrestha&label=Profile%20Views&color=blueviolet&style=for-the-badge" alt="Profile views"/></a>
       </p>
     </td>
     <td align="center" valign="middle" width="400">
@@ -64,9 +65,3 @@
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/lifetime.dark.svg" />
   <img src="./assets/stats/lifetime.light.svg" alt="Contribution history by year, shown as a weekly heatmap" width="100%" />
 </picture>
-
----
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=prajeshshrestha&label=Profile%20Views&color=blueviolet&style=flat-square" alt="Profile views" />
-</p>
