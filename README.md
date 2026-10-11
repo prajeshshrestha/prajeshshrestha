@@ -56,38 +56,14 @@
 </picture>
 
 <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/contributions.dark.svg" />
+  <img src="./assets/stats/contributions.light.svg" alt="Contribution streaks: current streak, longest streak, and contributions in the past 12 months" width="100%" />
+</picture>
+
+<picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/lifetime.dark.svg" />
-  <img src="./assets/stats/lifetime.light.svg" alt="Contribution history by year, shown as a two-dimensional weekly heatmap" width="100%" />
+  <img src="./assets/stats/lifetime.light.svg" alt="Contribution history by year, shown as a weekly heatmap" width="100%" />
 </picture>
-
-**[Open the interactive 3D viewer](https://prajeshshrestha.github.io/prajeshshrestha/)** — opens a separate page with rotation, zoom, and exact daily counts. The chart below is an image preview.
-
-<a href="https://prajeshshrestha.github.io/prajeshshrestha/" title="Open the interactive 3D viewer on a separate page">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/contributions.dark.svg" />
-    <img src="./assets/stats/contributions.light.svg" alt="3D contribution preview: click to open the interactive viewer" width="100%" />
-  </picture>
-</a>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/rhythm.dark.svg" />
-  <img src="./assets/stats/rhythm.light.svg" alt="Contribution patterns by weekday and month" width="100%" />
-</picture>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/composition.dark.svg" />
-  <img src="./assets/stats/composition.light.svg" alt="Contributions by year, split into commits, pull requests, issues, and reviews" width="100%" />
-</picture>
-
-<details>
-<summary>Languages by public repository file size</summary>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/stats/languages.dark.svg" />
-  <img src="./assets/stats/languages.light.svg" alt="Languages used across public repositories" width="100%" />
-</picture>
-
-</details>
 
 ---
 
